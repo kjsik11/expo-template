@@ -11,10 +11,7 @@ export {
   ErrorBoundary,
 } from "expo-router";
 
-export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: "/main",
-};
+// export const unstable_settings = {};
 
 SplashScreen.preventAutoHideAsync();
 
@@ -24,7 +21,6 @@ export default function RootLayout() {
     ...FontAwesome.font,
   });
 
-  // Expo Router uses Error Boundaries to catch errors in the navigation tree.
   useEffect(() => {
     if (error) throw error;
   }, [error]);
@@ -33,12 +29,7 @@ export default function RootLayout() {
     if (loaded) SplashScreen.hideAsync();
   }, [loaded]);
 
-  return (
-    <JotaiProvider>
-      {/* Keep the splash screen open until the assets have loaded. In the future, we should just support async font loading with a native version of font-display. */}
-      {loaded && <RootLayoutNav />}
-    </JotaiProvider>
-  );
+  return <JotaiProvider>{loaded && <RootLayoutNav />}</JotaiProvider>;
 }
 
 function RootLayoutNav() {
@@ -46,7 +37,7 @@ function RootLayoutNav() {
     <SafeAreaProvider>
       <View style={styles.appStyle}>
         <Stack>
-          <Stack.Screen name="main" />
+          <Stack.Screen name="index" />
         </Stack>
       </View>
     </SafeAreaProvider>

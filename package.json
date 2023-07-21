@@ -1,7 +1,6 @@
 {
   "name": "expo-template",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "author": "Gustavo F. Silva <gustafsilva.dev@gmail.com>",
   "license": "MIT",

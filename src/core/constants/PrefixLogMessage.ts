@@ -1,0 +1,8 @@
+import { APPLICATION_NAME } from "core/constants/Application";
+
+const PREFIX_LOG_MESSAGE_DEFAULT = "INTERNAL_LOG";
+
+const PREFIX_LOG_MESSAGE =
+  APPLICATION_NAME !== null ? APPLICATION_NAME : PREFIX_LOG_MESSAGE_DEFAULT;
+
+export default PREFIX_LOG_MESSAGE;

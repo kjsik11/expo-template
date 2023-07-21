@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🫀 Core | 🧩 Components | 🗄️ <FullView> should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+  testID="FULL_VIEW"
+>
+  <Text>
+    FullView Children
+  </Text>
+</View>
+`;

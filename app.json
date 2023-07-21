@@ -4,6 +4,7 @@
     "slug": "expo-template",
     "version": "1.0.0",
     "orientation": "portrait",
+    "entryPoint": "./app/_layout.tsx",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
@@ -15,9 +16,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
